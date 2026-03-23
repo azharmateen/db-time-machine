@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db-time-machine"
+version = "1.0.0"
+description = "Instant local database snapshots and restore -- like git branches for your DB"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "db-time-machine contributors"}]
+keywords = ["database", "snapshot", "backup", "restore", "sqlite", "postgresql", "mysql"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+]
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+db = "db_time_machine.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/db-time-machine/db-time-machine"
+Issues = "https://github.com/db-time-machine/db-time-machine/issues"
