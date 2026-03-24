@@ -1,5 +1,8 @@
 # db-time-machine
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 **Git branches for your database. Save. Branch. Restore. Diff.**
 
 Instant local database snapshots with compression, integrity verification, and branch support. Works with SQLite, PostgreSQL, and MySQL.
